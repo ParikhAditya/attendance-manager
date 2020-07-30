@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>VCET Attendance Manager Login</title>
+  <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="login-page">
+  <div class="form">
+    <form name='register-form' class="register-form" method="post">
+      <input type="text" placeholder="username"/>
+      <select placeholder='branch'><option value='INFT'>INFT</option><option value='CSE'>CSE</option><option value='EXTC'>EXTC</option><option value='MECH'>MECH</option><option value='INST'>INST</option><option value='CIVIL'>CIVIL</option></select>
+      <select placeholder='year'><option value='FE'>FE</option><option value='SE'>SE</option><option value='TE'>TE</option><option value='BE'>BE</option></select>
+      <input type="password" placeholder="password"/>
+      <input type="text" placeholder="email address"/>
+      <button onclick='createRegister()'>create</button>
+      <p class="message">Already registered? <a href="#">Sign In</a></p>
+    </form>
+    <form name='login-form' class="login-form" method="post">
+      <input type="text" name="usrnm" placeholder="username"/>
+      <input type="password" name='pwd' placeholder="password"/>
+      <button type="button" onclick="redirectMain()">login</button>
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+  </div>
+</div>
+<!-- partial -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script  src="login.js"></script>
+
+</body>
+</html>
